@@ -6,6 +6,11 @@
   color: white;
   position: relative;
   background-color: white;
+  img {
+    // height:100%;
+    width:100%;
+    object-fit:cover;
+  }
 }
 
 .index_card {
@@ -39,10 +44,6 @@
   opacity: 0.1;
 }
 
-#cocktail_cards {
-  overflow: scroll;
-}
-
 
 .show_card {
   margin-top:5%;
@@ -51,7 +52,7 @@
   text-align: center;
   height: 100%;
   box-shadow: 0 5px 10px rgba(0,0,0,0.5);
-  color: #8a00d4;
+  color: #484c7f;
   position: relative;
   background-color: #ddb6c6;
   padding:20px;
@@ -63,8 +64,11 @@
     padding: 10px;
   }
   img {
-    padding:20px;
+    // padding:20px;
+    margin:20px;
     width:100%;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
   }
 
 }
@@ -77,5 +81,9 @@
   background-color: #ddb6c6;
   padding:20px;
   border-radius: 5px;
+}
+
+.dose_form {
+  text-align: left;
 }
 

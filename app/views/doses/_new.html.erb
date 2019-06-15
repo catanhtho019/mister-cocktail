@@ -1,12 +1,12 @@
 <div class="wrapper"style="width:100%;">
   <div class="container">
-    <div class="row">
+    <div class="dose_form">
       <div class="col-xs-8 col-xs-offset-2 my-4">
         <h3>Add a new ingredient</h3>
         <%= simple_form_for [@cocktail, @dose] do |f| %>
           <%= f.association :ingredient, input_html: {required: true} %>
            <%= f.input :description, placeholder: '6cl' %>
-          <%= f.button :submit, "Add ingredient", class: "btn btn-danger" %>
+          <%= f.button :submit, "Add ingredient", class: "btn btn-default" %>
          <!--  <%= link_to "Last cocktail visited", url_for(:back), class: "btn btn-default" %> -->
         <% end %>
       </div>

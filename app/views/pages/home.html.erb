@@ -10,11 +10,19 @@
 </div>
 
 <div class="container my-4" id="cocktail_cards">
-  <h2 style="text-align: center;margin:2%;">Recommendations</h2>
+  <h2 style="text-align:center;margin:2%;color:#484c7f;">Recommendations</h2>
   <div class="row">
     <% @cocktails.each do |cocktail| %>
       <div class="col-xs-12 col-sm-6 col-lg-4">
-        <div class="home_card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://source.unsplash.com/500x400/?cocktail');">
+        <div class="home_card">
+           <!--  <img src="https://source.unsplash.com/500x400/?cocktail" alt="cocktail"> -->
+
+          <% if cocktail.photo? %>
+            <% background_url = cl_image_tag cocktail.photo, width: 400, height: 500, crop: :cover %>
+          <% else %>
+            <% background_url = 'https://source.unsplash.com/500x400/?cocktail' %>
+          <% end %>
+
           <div class="card-description">
             <h2><%= cocktail.name %></h2>
           </div>
@@ -24,7 +32,6 @@
     <% end %>
   </div>
 </div>
-
 
 
 <script>
