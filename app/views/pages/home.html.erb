@@ -1,0 +1,45 @@
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('<%= image_path 'banner_cocktail.jpg' %>');background-size:cover;">
+
+  <div class="container">
+    <div class="banner-content">
+      <h1><strong>Cocktail Library</strong></h1>
+      <p>Awesome beverages for developers nightlife</p>
+    </div>
+  </div>
+  <a href="#cocktail_cards" class="scroll-down" address="true"></a>
+</div>
+
+<div class="container my-4" id="cocktail_cards">
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+      <div class="col-xs-12 col-sm-6 col-lg-4">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://source.unsplash.com/500x400/?cocktail');">
+          <div class="card-description">
+            <h2><%= cocktail.name %></h2>
+          </div>
+          <%= link_to "", cocktail_path(cocktail), class: 'card-link' %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
+
+<script>
+   $(function() {
+    $('.scroll-down').click (function() {
+      $('html, body').animate({scrollTop: $('section.ok').offset().top }, 'slow');
+      return false;
+    });
+  });
+</script>
+
+<!-- <script>
+  $(function() {
+  $('a[href*=#]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+});
+</script> -->

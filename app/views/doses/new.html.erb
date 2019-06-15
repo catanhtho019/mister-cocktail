@@ -1,0 +1,14 @@
+<div class="wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-2">
+        <%= simple_form_for [@cocktail, @dose] do |f| %>
+          <%= f.association :ingredient, input_html: {required: true} %>
+           <%= f.input :description, placeholder: '6cl' %>
+          <%= f.button :submit, "Save Dose", class: "btn btn-danger" %>
+          <%= link_to "Last cocktail visited", url_for(:back), class: "btn btn-default" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

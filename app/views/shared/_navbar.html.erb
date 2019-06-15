@@ -1,0 +1,30 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <%= link_to "/", class: "navbar-brand" do %>
+    <i class="fas fa-cocktail" style="font-size:25px;color:white;">
+    <h3 style="font-size:25px;color:white;">Cocktail Library</h3>
+    </i>
+
+  <% end %>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse">
+    <div class="search_form mx-4">
+      <%= form_tag(cocktails_path, method: :get) do %>
+        <div class="input-group">
+          <%= text_field_tag(:name, nil, placeholder: "Search for a cocktail", class: "Input--search form-control") %>
+          <div class="input-group-btn">
+            <%= button_tag :submit, class: "btn" do %>
+              <i class="fa fa-search" aria-hidden="true"></i>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <%= link_to "Add a cocktail", new_cocktail_path, class: "btn" %>
+
+  </div>
+</div>
