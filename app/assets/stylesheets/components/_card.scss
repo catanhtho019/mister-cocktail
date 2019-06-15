@@ -1,4 +1,14 @@
-.card {
+.home_card {
+  height: 175px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  background-position: center;
+  color: white;
+  position: relative;
+  background-color: white;
+}
+
+.index_card {
   height: 175px;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   background-size: cover !important;
@@ -34,12 +44,18 @@
 }
 
 
-.show-card {
-  margin-top: 10%;
+.show_card {
+  margin-top:5%;
+  margin-bottom:5%;
   justify-content: center;
-  background-color: white;
   text-align: center;
-  border-radius: 10px;
+  height: 100%;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+  color: #8a00d4;
+  position: relative;
+  background-color: #ddb6c6;
+  padding:20px;
+  border-radius: 5px;
   table {
     text-align:center;
   }
@@ -48,7 +64,18 @@
   }
   img {
     padding:20px;
+    width:100%;
   }
 
+}
+
+.form_card {
+  height: 100%;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+  color: #8a00d4;
+  position: relative;
+  background-color: #ddb6c6;
+  padding:20px;
+  border-radius: 5px;
 }
 

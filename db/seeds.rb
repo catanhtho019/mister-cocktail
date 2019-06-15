@@ -21,6 +21,3 @@ ingredients["drinks"].each do |ingredient|
   puts "create #{i.name}"
 end
 
-cocktail1 = Cocktail.create!(name: "Mojito"),
-cocktail2 = Cocktail.create!(name: "Strawberry Daquiri"),
-cocktail3 = Cocktail.create!(name: "Gin & Tonic")
