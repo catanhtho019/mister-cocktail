@@ -1,10 +1,19 @@
 <div class="container">
   <div class="show_card">
     <h1 style="text-align:left;"><%= @cocktail.name %></h1>
-    <div class="row">
-      <div class="col-xs-12 col-lg-10">
-        <div class="d-flex justify-content-between">
+    <div style="text-align:left;">
+      <%= link_to edit_cocktail_path do %>
+        <i class="far fa-edit"></i>
+      <% end %>
+      <%= link_to cocktail_path, method: :delete, data: { confirm: "Do you want to delete #{@cocktail.name}?" } do %>
+        <i class="fas fa-trash destroy_cocktail"style="font-size:22px;margin-left:1%;"></i>
+      <% end %>
+    </div>
 
+
+    <div class="row">
+      <div class="col-sm-12 col-lg-10">
+        <div class="d-flex">
           <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
           <%= render "doses/new", cocktail: @cocktail, dose: @dose %>
         </div>
@@ -13,8 +22,8 @@
 
     <div class="row">
       <div class="col-sm-12">
-        <table class="table table-bordered">
-          <tbody>
+        <table class="table table-bordered"style="background-color: #FCF9FF;border-radius:10px;border:0;margin-top:2%;color:#333333;text-align:left;">
+          <tbody style="padding-left:5%;">
             <thead>
               <th>Ingredient</th>
               <th>Amount</th>

@@ -6,21 +6,33 @@
   color: white;
   position: relative;
   background-color: white;
+  margin-top:2%;
+  margin-bottom:2%;
   img {
     // height:100%;
+    border-radius:5px;
     width:100%;
     object-fit:cover;
   }
 }
 
 .index_card {
-  height: 175px;
+  height: 200px;
+  margin-top:2%;
+  margin-bottom:2%;
+  // width: 100%;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
-  background-size: cover !important;
+  // object-fit: cover !important;
   background-position: center;
   color: white;
   position: relative;
   background-color: white;
+  img {
+    // height:100%;
+    border-radius:5px;
+    width:100%;
+    object-fit:cover;
+  }
 }
 .card-description {
   position: absolute;
@@ -51,21 +63,24 @@
   justify-content: center;
   text-align: center;
   height: 100%;
+  width:100%;
   box-shadow: 0 5px 10px rgba(0,0,0,0.5);
   color: #484c7f;
   position: relative;
   background-color: #ddb6c6;
-  padding:20px;
+  padding:30px;
   border-radius: 5px;
   table {
     text-align:center;
   }
   h1 {
     padding: 10px;
+    color:#17223b;
   }
   img {
-    // padding:20px;
-    margin:20px;
+    margin-right:20px;
+    margin-top:20px;
+    margin-bottom:20px;
     width:100%;
     border-radius: 5px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.5);

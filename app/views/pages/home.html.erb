@@ -2,7 +2,7 @@
 
   <div class="container">
     <div class="banner-content">
-      <h1><strong>Cocktail Library</strong></h1>
+      <h1>Cocktail Library</h1>
       <p>Awesome beverages for developers nightlife</p>
     </div>
   </div>
@@ -15,10 +15,8 @@
     <% @cocktails.each do |cocktail| %>
       <div class="col-xs-12 col-sm-6 col-lg-4">
         <div class="home_card">
-           <!--  <img src="https://source.unsplash.com/500x400/?cocktail" alt="cocktail"> -->
-
           <% if cocktail.photo? %>
-            <% background_url = cl_image_tag cocktail.photo, width: 400, height: 500, crop: :cover %>
+             <img src="<%= cocktail.photo %>" style="height:100%;width:100%;linear-gradient(rgba(0,0,0,0.3)">
           <% else %>
             <% background_url = 'https://source.unsplash.com/500x400/?cocktail' %>
           <% end %>
