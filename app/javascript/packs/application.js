@@ -1,4 +1,5 @@
 import 'bootstrap';
+import { initSweetalert } from '../plugins/init_sweetalert';
 /* eslint no-console:0 */
 // This file is automatically compiled by Webpack, along with any other files
 // present in this directory. You're encouraged to place your actual application logic in
@@ -15,5 +16,16 @@ import 'bootstrap';
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
+initSweetalert('#sweet-alert-btn', {
+  title: "Are you sure?",
+  text: "This action cannot be reversed",
+  icon: "warning"
+}, (value) => {
+  if (value) {
+    const link = document.querySelector('#delete-link');
+    link.click();
+  }
+});
 
 console.log('Hello World from Webpacker')
