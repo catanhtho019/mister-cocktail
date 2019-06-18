@@ -6,7 +6,7 @@
         <i class="far fa-edit"></i>
       <% end %>
       <%= link_to cocktail_path, method: :delete, data: { confirm: "Do you want to delete #{@cocktail.name}?" } do %>
-        <i class="fas fa-trash destroy_cocktail"style="font-size:22px;margin-left:1%;"></i>
+        <i class="fas fa-trash destroy_cocktail"style="font-size:22px;margin-left:1%;"id="sw-btn"></i>
       <% end %>
     </div>
 
@@ -47,3 +47,4 @@
     </div>
   </div>
 </div>
+

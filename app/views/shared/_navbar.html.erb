@@ -18,9 +18,10 @@
         <div class="input-group">
           <%= text_field_tag(:name, nil, placeholder: "Search for a cocktail", class: "Input--search form-control") %>
           <div class="input-group-btn">
-            <%= button_tag :submit, class: "btn" do %>
+            <button name="button" type="submit" class="btn">
               <i class="fa fa-search" aria-hidden="true"></i>
-            <% end %>
+            </button>
+
           </div>
         </div>
       <% end %>

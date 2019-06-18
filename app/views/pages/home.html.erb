@@ -1,12 +1,18 @@
-<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('<%= image_path 'banner_cocktail.jpg' %>');background-size:cover;">
-
-  <div class="container">
-    <div class="banner-content">
-      <h1>Cocktail Library</h1>
-      <p>Awesome beverages for developers nightlife</p>
-    </div>
+<div class="banner" >
+  <!-- <div class="container"> -->
+  <div class="banner-content">
+    <h1>Cocktail Library</h1>
+    <p>Awesome beverages for developers nightlife</p>
+      <a href="#cocktail_cards" class="scroll-down" address="true"></a>
+      <div class="video-container">
+        <div class="color-overlay"></div>
+          <video autoplay loop muted>
+            <source src="<%= video_path 'hero_video.mp4' %>" type="video/mp4">
+          </video>
+        </div>
+      <!-- </div> -->
   </div>
-  <a href="#cocktail_cards" class="scroll-down" address="true"></a>
+  <!-- </div> -->
 </div>
 
 <div class="container my-4" id="cocktail_cards">
