@@ -6,7 +6,11 @@
     <title>Cocktail Library</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous">
+  </script>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->
@@ -46,4 +50,5 @@ document.title = masg;
 timer = window.setTimeout("titlebar("+pos+")",speed); }
 titlebar(0);
 </script>
+
 
