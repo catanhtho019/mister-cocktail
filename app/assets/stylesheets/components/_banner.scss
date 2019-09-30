@@ -21,22 +21,16 @@
    //  overflow: hidden;
    //  position: relative;
    color:white;
-  h1 {
-    font-family: 'Cookie', cursive;
-    font-weight: bold;
-    font-size: 120px;
-    padding:15px;
-    text-align: center;
-    margin: 15px;
-    z-index: 2;
-    // text-align: center;
-    // font-size: 6rem;
-    // font-family: "Cookie";
-    // padding: 10px;
-    // margin: 15px;
-    // z-index: 1;
-    opacity: 0.8;
-  }
+  // h1 {
+  //   font-family: 'Cookie', cursive;
+  //   font-weight: bold;
+  //   font-size: 120px;
+  //   padding:15px;
+  //   text-align: center;
+  //   margin: 15px;
+  //   z-index: 2;
+  //   opacity: 0.8;
+  // }
   p {
     font-size: 30px;
     opacity: 0.6;
@@ -123,3 +117,22 @@
     transform: translateY(-5px);
   }
 }
+
+.cocktail_index {
+    font-family: 'Cookie', cursive;
+    color:white;
+    font-weight: bold;
+    font-size: 120px;
+    padding:15px;
+    text-align: center;
+    margin: 15px;
+    z-index: 2;
+    opacity: 0.8;
+}
+
+.cocktail_index:hover {
+  color: white;
+  opacity: 0.5;
+}
+
+

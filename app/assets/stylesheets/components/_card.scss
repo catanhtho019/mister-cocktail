@@ -102,3 +102,33 @@
   text-align: left;
 }
 
+
+@media (max-width: 1068px) and (min-width: 576px) {
+  .show_card {
+  width: 100%;
+  justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .show_card {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 1068px) and (min-width: 576px) {
+  .dose_form {
+    text-align: left;
+    width: fit-content;
+  }
+}
+
+@media (max-width: 576px) {
+  .dose_form {
+    text-align: left;
+    width: fit-content;
+    margin-left: -325px;
+    margin-top: 350px;
+  }
+}
